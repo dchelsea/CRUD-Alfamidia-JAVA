@@ -29,14 +29,6 @@ public class Aluno extends Pessoa{
                 ", cadastro realizado em: " + dataCadastro +
                 ", alteração realidada em: " + dataUltimaAlteracao +
                 ", nota final: " + notaFinal;
-                /*"Aluno{" + "nome=" + this.getNome() +
-                ", telefone=" + this.getTelefone() +
-                ", dataNascimento=" + this.getDataNascimento() +
-                ", dataCadastro=" + this.getDataCadastro() +
-                ", dataUltimaAlteracao=" + this.getDataUltimaAlteracao() +
-                ", notaFinal=" + notaFinal +
-                '}';
-                */
     }
 
     
