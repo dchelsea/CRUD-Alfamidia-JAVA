@@ -1,2 +1,2 @@
-# ProjetoCRUD_Alfamidia
+# Projeto CRUD Alfamidia
 Implementação de um sistema CRUD criado para o curso de JAVA da Alfamídia do projeto +praTi
