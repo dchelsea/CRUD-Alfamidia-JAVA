@@ -6,7 +6,7 @@ package projetocrud.model;
  */
 public class Aluno extends Pessoa{
     
-    protected double notaFinal;
+    private double notaFinal;
 
     public Aluno(double notaFinal, String nome, String telefone, String dataNascimento, String dataCadastro, String dataUltimaAlteracao) {
         super(nome, telefone, dataNascimento, dataCadastro, dataUltimaAlteracao);
@@ -24,18 +24,11 @@ public class Aluno extends Pessoa{
     @Override
     public String toString() {
         return  nome + 
-                ", telefone: " + telefone +
-                ", data de nascimento: " + dataNascimento +
-                ", cadastro realizado em: " + dataCadastro +
-                ", alteração realidada em: " + dataUltimaAlteracao +
-                ", nota final: " + notaFinal;
+                ", Telefone: " + telefone +
+                ", Data de nascimento: " + dataNascimento +
+                ", Cadastro realizado: " + dataCadastro +
+                ", Alteração realizada: " + dataUltimaAlteracao +
+                ", Nota final: " + getNotaFinal();       
     }
-
-    
-
-    
-    
-    
-    
     
 }

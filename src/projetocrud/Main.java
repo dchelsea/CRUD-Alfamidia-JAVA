@@ -28,10 +28,10 @@ public class Main {
         String dataCadastro;
         String dataUltimaAlteracao;
         String dataCadastroInicial = "";
-        String dataSemAlteracao = "Nenhuma alteração";
+        String dataSemAlteracao = "nenhuma";
 
         do {
-            System.out.println("------------------------------------");
+            System.out.println("------------------------------------------------");
             System.out.println("Bem vindo ao sistema de cadastro!");
             System.out.println("Digite o número da operação que desejas efetuar: ");
             System.out.println("1 - Cadastrar pessoa ou aluno");
@@ -39,7 +39,7 @@ public class Main {
             System.out.println("3 - Atualizar dados de uma pessoa ou aluno");
             System.out.println("4 - Deletar uma pessoa ou aluno");
             System.out.println("0 - Encerrar o programa");
-            System.out.println("------------------------------------");
+            System.out.println("------------------------------------------------");
 
             opcao = sc.nextInt();
             sc.nextLine();
@@ -57,9 +57,7 @@ public class Main {
                     DateTimeFormatter formatterCadastro = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
                     String formattedStringCadastro = localDateCadastro.format(formatterCadastro);
                     dataCadastro = formattedStringCadastro;
-
                     dataCadastroInicial = dataCadastro;
-
                     dataUltimaAlteracao = dataSemAlteracao;
 
                     System.out.println("Caso queira criar um aluno, digite a letra S/s: ");
@@ -74,10 +72,12 @@ public class Main {
                     System.out.println("Cadastro efetuado com sucesso!");
                     break;
                 case 2:
+                    System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
                     pessoas.forEach(p -> {
                         System.out.println(p.toString());
                     });
-                    System.out.print("Número de pessoas cadastradas no sistema:");
+                    System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.print("Número de cadastros no sistema:");
                     System.out.println(pessoas.size());
                     break;
                 case 3:
@@ -94,12 +94,11 @@ public class Main {
                             System.out.println("Digite uma data de nascimento: ");
                             dataNascimento = sc.nextLine();
 
-                            dataCadastro = dataCadastroInicial;
-
                             LocalDateTime localDateAlteracao = LocalDateTime.now();
                             DateTimeFormatter formatterAlteracao = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
                             String formattedStringAlteracao = localDateAlteracao.format(formatterAlteracao);
                             dataUltimaAlteracao = formattedStringAlteracao;
+                            dataCadastro = dataCadastroInicial;
 
                             System.out.println("Caso queira criar um aluno, digite a letra S/s: ");
                             checaSeForAluno = sc.nextLine();

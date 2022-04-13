@@ -67,10 +67,10 @@ public class Pessoa {
     @Override
     public String toString() {
         return  nome + 
-                ", telefone: " + telefone +
-                ", data de nascimento: " + dataNascimento +
-                ", cadastro realizado em: " + dataCadastro +
-                ", alteração realidada em: " + dataUltimaAlteracao;
+                ", Telefone: " + telefone +
+                ", Data de nascimento: " + dataNascimento +
+                ", Cadastro realizado: " + dataCadastro +
+                ", Alteração realizada: " + dataUltimaAlteracao;
     }
     
     
